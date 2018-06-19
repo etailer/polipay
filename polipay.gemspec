@@ -11,9 +11,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Robert Coleman']
   spec.email         = ['github@robert.net.nz']
 
-  spec.summary       = 'TODO: Write a short summary, because RubyGems requires one.'
-  spec.description   = 'TODO: Write a longer description or delete this line.'
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = 'A Ruby (and Rails) API client for POLi Payments'
+  spec.description   = 'A Ruby (and Rails) API client for POLi Payments'
+  spec.homepage      = 'https://github.com/etailer/polipay'
   spec.license       = 'MIT'
 
   spec.files = `git ls-files -z`.split("\x0").reject do |f|
