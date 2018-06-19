@@ -7,7 +7,7 @@ module Polipay
     LISTENERS << block
   end
 
-  def self.propagate(nudge)
-    LISTENERS.each { |block| block.call nudge }
+  def self.propagate(nudge, transaction)
+    LISTENERS.each { |block| block.call nudge, transaction }
   end
 end

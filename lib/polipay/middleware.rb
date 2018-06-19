@@ -24,11 +24,11 @@ module Polipay
   private
 
     def parse_and_respond(body)
-      raise Polipay::InvalidNudge unless body['token'].present?
-
-      Polipay.propagate body['token']
+      nudge = Polipay::Nudge.new body
+      transaction = Polipay::GetTransaction.perform token: nudge.token
+      Polipay.propagate nudge, transaction
       response 200
-    rescue Polipay::InvalidNudge => e
+    rescue Polipay::Nudge::Invalid => e
       config.logger.error e
       response 400, 'Invalid Nudge'
     rescue => e
