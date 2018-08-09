@@ -44,7 +44,7 @@ module Polipay
         NotificationURL: config.notification_url,
         Timeout: config.timeout,
         SelectedFICode: @selected_fi_code,
-      }.delete_if { |k, v| v.nil? || v.empty? }
+      }.delete_if { |k, v| v.nil? || v.to_s.empty? }
     end
 
     def config
