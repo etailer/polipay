@@ -1,6 +1,6 @@
 # Polipay
 
-A Ruby (and Rails) API client for [POLi Payments](https://www.polipayments.com/Developer).
+An unofficial Ruby (and Rails) API client for [POLi Payments](https://www.polipayments.com/Developer).
 
 ## Installation
 
