@@ -1,5 +1,7 @@
 # Polipay
 
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=etailer/polipay)](https://dependabot.com)
+
 An unofficial Ruby (and Rails) API client for [POLi Payments](https://www.polipayments.com/Developer).
 
 ## Installation
